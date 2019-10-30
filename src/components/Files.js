@@ -40,7 +40,6 @@ const Files = props => {
   // get the file in modal assign it to a variable
   const handleChange = event => {
     const fileUploaded = event.target.files[0];
-    console.log(fileUploaded);
     setFile(fileUploaded);
   };
 

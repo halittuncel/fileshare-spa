@@ -60,7 +60,6 @@ const Folders = () => {
         })
         .catch(function(error) {
           if (error.response) {
-            console.log(error.response);
             alertify.error('There was a problem creating the folder');
           }
         });

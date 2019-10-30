@@ -18,8 +18,6 @@ const ModalFile = ({
   // again axios giving error used fetch
   // create one time access link for a file
   const handleCreateAccess = () => {
-    console.log(`${api}fileshare/folder/${folderId}/file/${fileId}`);
-
     fetch(`${api}fileshare/folder/${folderId}/file/${fileId}`, {
       method: 'POST',
       headers: {

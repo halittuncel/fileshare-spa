@@ -17,7 +17,6 @@ const AccessLink = () => {
         .then(res => {
           alertify.success('Folder downloading.');
           var fileToDownload = res.data.file;
-          console.log(res);
           fileDownload(fileToDownload, res.data.name);
         })
         .catch(function(error) {
